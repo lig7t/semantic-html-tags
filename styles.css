@@ -1,0 +1,110 @@
+html {
+    display: flex;
+    background-color: rgb(241, 205, 205);
+    text-align: center;
+    line-height: 1.5;
+    justify-content: center;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Geneva, Tahoma, sans-serif; */
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 70%;
+    background-color: rgb(255, 216, 216);
+    padding: 36px;
+    margin: 0;
+}
+
+ul {
+    position: sticky;
+    left: 10px;
+    text-align:start;
+    padding: 20px 50px;
+    font-size: 19px;
+}
+
+h1 {
+    color: black;
+    letter-spacing: 1.2px;
+    line-height: 0.8;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+h2, h3, h4, h5 {
+    color: black;
+}
+
+article {
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    padding: auto 0;
+    background-color: rgb(248, 161, 161);
+}
+
+p {
+    color: rgb(39, 0, 12);
+    padding: 20px;
+}
+
+p strong {
+    font-size: 20px;
+    letter-spacing: 1.1px;
+}
+
+.table_Diagram {
+    border: 2px solid black;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    min-width: 250px;
+}
+
+.table_Diagram td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+.diagram {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    touch-action: none;
+}
+
+a {
+    color: rgb(43, 0, 13);
+    text-decoration: none;
+}
+
+.table_Desc {
+    /* border: 2px solid black; */
+    letter-spacing: 1.2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-spacing: 3px;
+    background-color: thistle;
+    border-radius: 12px 12px 0 0;
+}
+
+.table_Desc th{
+    background-color: indianred;
+    border-radius: 10px 10px 0 0;
+}
+
+.table_Desc td {
+    border-top: 2px solid hotpink;
+    background-color: lightpink;
+    text-align: center;
+}
+
+.table_Desc tr {
+    margin: 10px auto;
+}
+
+.code {
+    background-color: gainsboro;
+}

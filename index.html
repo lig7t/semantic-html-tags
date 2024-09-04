@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Semantic HTML</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section>
+        <h1>Semantic Elements in HTML</h1>
+
+        <p>Many web sites contain HTML code like:
+            <br><strong>&lt;div id="nav"&gt;</strong>
+            <br><strong>&lt;div class="header"&gt;</strong>
+            <br><strong>&lt;div id="footer"&gt;</strong>
+            <br>to indicate navigation, header, and footer.
+        </p>
+    
+        <div class="diagram">
+            
+            <ul>
+                <li><a href="#aside">&lt;aside&gt;</a></li>
+                <li><a href="#article">&lt;article&gt;</a></li>
+                <li><a href="#">&lt;details&gt;</a></li>
+                <li><a href="#figure-figcaption">&lt;figcaption&gt;</a></li>
+                <li><a href="#figure-figcaption">&lt;figure&gt;</a></li>
+                <li><a href="#footer-nav">&lt;footer&gt;</a></li>
+                <li><a href="#header">&lt;header&gt;</a></li>
+                <li><a href="#">&lt;main&gt;</a></li>
+                <li><a href="#">&lt;mark&gt;</a></li>
+                <li><a href="#footer-nav">&lt;nav&gt;</a></li>
+                <li><a href="#section">&lt;section&gt;</a></li>
+                <li><a href="#">&lt;summary&gt;</a></li>
+                <li><a href="#">&lt;time&gt;</a></li>
+            </ul>
+
+            <table class="table_Diagram">
+                <tr>
+                    <td colspan="2">&lt;header&gt;</td>
+                </tr>        
+                <tr>
+                    <td colspan="2">&lt;nav&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td rowspan="2">&lt;aside&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                </tr>
+                <tr>
+                    <td colspan="2">&lt;footer&gt;</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    
+    <section>
+        <h1>HTML Table Reference</h1>
+        
+        <h3>Table Tags</h3>
+        
+        <p>Below is a list of some of the semantic elements in HTML.</p>
+        
+        <table class="table_Desc">
+            <thead>
+                <th>Tag</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="code">&lt;aside&gt;</span></td>
+                    <td>The &lt;aside&gt; element defines some content aside from the content it is placed in (like a sidebar).</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;article&gt;</span></td>
+                    <td>The &lt;article&gt; element specifies independent, self-contained content.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;details&gt;</span></td>
+                    <td>The set of rows containing actual table data.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;figcaption&gt;</span></td>
+                    <td>The &lt;figcaption&gt; tag defines a caption for a &lt;figure&gt; element. The &lt;figcaption&gt; element can be placed as the first or as the last child of a &lt;figure&gt; element.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;figure&gt;</span></td>
+                    <td>The &lt;figure&gt; tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;footer&gt;</span></td>
+                    <td>The &lt;footer&gt; element defines a footer for a document or section.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;header&gt;</span></td>
+                    <td>The &lt;header&gt; element represents a container for introductory content or a set of navigational links.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;main&gt;</span></td>
+                    <td>Specifies the main content of a document</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;mark&gt;</span></td>
+                    <td>Defines marked/highlighted text</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;nav&gt;</span></td>
+                    <td>The &lt;nav&gt; element defines a set of navigation links.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;section&gt;</span></td>
+                    <td>The &lt;section&gt; element defines a section in a document.</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;summary&gt;</span></td>
+                    <td>Defines a visible heading for a &lt;details&gt; element</td>
+                </tr>
+                <tr>
+                    <td><span class="code">&lt;time&gt;</span></td>
+                    <td>Defines a date/time</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+    </section>
+    
+    <main>
+        <article id="section">
+            <h1>HTML &lt;section&gt; Element</h1>
+
+            <p>
+                The &lt;section&gt; element defines a section in a document.
+                <br><br>According to W3C's HTML documentation: " A section is a thematic grouping of content, typically with a heading. "
+                <br><br>Examples of where a &lt;section&gt; element can be used:
+            </p>
+
+            <ul>
+                <li>Chapters</li>
+                <li>Introduction</li>
+                <li>News items</li>
+                <li>Contact information</li>
+            </ul>
+            
+        </article>
+        
+        <article id="article">
+            <h1>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa</h1>
+
+            <p>
+                The &lt;article&gt; element specifies independent, self-contained content.
+                <br>    
+                <br>    
+                The &lt;section&gt; element defines section in a document.
+                <br>    
+                Can we use the definitions to decide how to nest those elements? No, we cannot!
+                <br>    
+                <br>    
+                So, you will find HTML pages with &lt;section&gt; elements containing &lt;article&gt; elements, and &lt;article&gt; elements containing &lt;section&gt; elements.
+            </p>
+        </article>
+
+        <article id="header">
+            <h1>HTML &lt;header&gt; Element</h1>
+
+            <p>
+                The &lt;header&gt; element represents a container for introductory content or a set of navigational links.
+                <br>
+                <br>A &lt;header&gt; element typically contains:
+            </p>
+
+            <ul>
+                <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+                <li>logo or icon</li>
+                <li>authorship information</li>
+            </ul>
+
+        </article>
+
+        <article id="footer-nav">
+            <h1>HTML &lt;footer&gt; Element</h1>
+
+            <p>
+                The &lt;footer&gt; element defines a footer for a document or section.
+                <br>
+                <br>A &lt;footer&gt; element typically contains:
+            </p>
+
+            <ul>
+                <li>authorship information</li>
+                <li>copyright information</li>
+                <li>contact information</li>
+                <li>sitemap</li>
+                <li>back to top links</li>
+                <li>related documents</li>
+            </ul>
+
+            <h2>HTML &lt;nav&gt; Element</h2>
+
+            <p>
+                The &lt;nav&gt; element defines a set of navigation links
+            </p>
+        </article>
+
+        <article id="aside">
+            <h1>HTML &lt;aside&gt; Element</h1>
+
+            <p>
+                The &lt;aside&gt; element defines some content aside from the content it is placed in (like a sidebar).
+                <br>The &lt;aside&gt; content should be indirectly related to the surrounding content.
+            </p>
+        </article>
+
+        <article id="figure-figcaption">
+            <h1>HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h1>
+
+            <p>
+                The &lt;figure&gt; tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+                <br>The &lt;figcaption&gt; tag defines a caption for a &lt;figure&gt; element. The &lt;figcaption&gt; element can be placed as the first or as the last child of a &lt;figure&gt; element.
+            </p>
+        </article>
+
+    </main>
+</body>
+</html>
+
